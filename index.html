@@ -132,6 +132,9 @@
         input[type="submit"]:hover {
             background-color: #29773a;
         }
+        video::-webkit-media-controls-volume-slider {
+        display: none;
+    }
     </style>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -171,7 +174,7 @@
         <video controls>
             <source src="Media/test video.mp4" type="video/mp4">
             Your browser does not support the video tag.
-
+ 
             <track kind="subtitles" label="English" src="Media/sample-video-subtitles.vtt" srclang="en">
         </video>
         
