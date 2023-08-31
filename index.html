@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testing Website</title>
     <style>
-       
+      
         body {
             font-family: Arial, sans-serif;
             background-color: #e2dfdf;
@@ -13,14 +13,12 @@
             padding: 0;
         }
 
-      
         header {
             background-color: #cab7b7;
             text-align: center;
             padding: 1rem;
         }
 
-       
         .logo-container {
             display: flex;
             justify-content: space-between;
@@ -31,7 +29,6 @@
             height: 50px;
         }
 
-      
         .container {
             width: 80%;
             margin: auto;
@@ -40,50 +37,51 @@
             box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
             border-radius: 5px;
             margin-top: 20px;
+            padding: 2rem 2rem 4rem;
         }
 
-        
         .anchor-link {
-            display: block;
-            margin-top: 10px;
-            text-align: right;
+            display: inline-block;
+            margin-right: 20px;
             font-size: 14px;
             color: #3498db;
+            text-decoration: none;
         }
 
-        
         h2 {
             color: #333;
             margin-top: 20px;
         }
 
+        
         p {
             line-height: 1.6;
             margin-bottom: 20px;
         }
 
-        
+        /* Video and iframe styles */
         video,
         iframe {
             width: 100%;
             height: auto;
         }
 
-        
+        /* Audio styles */
         audio {
             width: 100%;
             margin-top: 10px;
         }
 
-        
+        /* Figcaption styles */
         figcaption {
             margin-top: 10px;
             font-style: italic;
             line-height: 20px;
             display: none;
+            color: #777;
         }
 
-       
+        /* Transcript button styles */
         #transcript-button {
             margin-top: 10px;
             padding: 8px 16px;
@@ -100,6 +98,7 @@
             background-color: #18a05cce;
         }
 
+        /* Form styles */
         form {
             margin-top: 20px;
             text-align: left;
@@ -161,6 +160,10 @@
     </header>
     <div class="container">
         <a class="anchor-link" href="#contact-form">Contact Us</a>
+        <a class="anchor-link" href="moreinfo.html">Learn More</a>           
+        <a class="anchor-link" href="index.html">Home</a>
+        <a class="anchor-link" href="images.html">Images</a>
+
         <h2>Welcome to My Website</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quae quidem vero quas incidunt, provident beatae, doloremque perferendis voluptatibus ratione mollitia ipsa neque maiores? Rem molestiae odio, accusantium cumque ab.</p>
         
@@ -189,13 +192,10 @@
             <h3>Contact Us</h3>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
-            <p></p>
             <label for="email">Email:</label>
             <input type="text" id="email" name="email" required>
-            <p></p>
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
-            <p></p>
             <input type="submit" value="Submit">
         </form>
     </div>
